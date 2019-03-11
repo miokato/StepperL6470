@@ -118,6 +118,7 @@ void L6470::go_to(long pos)
     this->transfer(0x60, 3, pos);
 }
 
+// FIXME: dia=1で動かすと、回転し続ける。 
 void L6470::go_to_dia(int dia, int pos)
 {
     if (dia == 1)
