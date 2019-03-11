@@ -84,15 +84,15 @@ class L6470 {
     void go_until(int act, int dia, long spd); //指定した回転方向に指定した速度で回転し、スイッチのONで急停止と座標処理
     void release_sw(int act, int dia); //スイッチがOFFに戻るまで最低速度で回転し、停止と座標処理
     void go_home(); //座標原点に移動
-    void go_mark();　//マーク座標に移動
-    void reset_pos();　//絶対座標リセット
+    void go_mark(); //マーク座標に移動
+    void reset_pos(); //絶対座標リセット
     void reset_device(); //L6470リセット
-    void softstop();　//回転停止、保持トルクあり
-    void hardstop();　//回転急停止、保持トルクあり
+    void softstop(); //回転停止、保持トルクあり
+    void hardstop(); //回転急停止、保持トルクあり
     void softhiz(); //回転停止、保持トルクなし
     void hardhiz(); //回転急停止、保持トルクなし
-    long get_status(); //statusレジスタの値を返す （this->get_param_status();と同じ）
-    void busy_delay(long time);　//busyフラグがHIGHになってから、指定ミリ秒待つ。
+    long get_status(); //statusレジスタの値を返す (this->get_param_status();と同じ)
+    void busy_delay(long time); //busyフラグがHIGHになってから、指定ミリ秒待つ。
 
     void transfer(int add, int bytes, long val);
     void send(unsigned char add_or_val);
