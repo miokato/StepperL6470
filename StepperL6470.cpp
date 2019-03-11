@@ -77,6 +77,16 @@ void L6470::init() {
 	SPI.setDataMode(SPI_MODE3);
 	SPI.setClockDivider(SPI_CLOCK_DIV16);
 	SPI.setBitOrder(MSBFIRST);
+
+    digitalWrite(_reset_pin, HIGH);
+	delay(10);
+	digitalWrite(_reset_pin, LOW);
+	delay(10);
+	digitalWrite(_reset_pin, HIGH);
+	delay(10);
+
+	this->reset_device();
+	this->reset_device();
 }
 
 void L6470::run(int dia, long spd)
