@@ -1,6 +1,7 @@
 # L6470ライブラリ
 
 ## Documents
+
 英語
 https://www.st.com/resource/en/datasheet/l6470.pdf
 
